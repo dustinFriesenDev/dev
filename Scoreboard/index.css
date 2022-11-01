@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Cursed Timer ULil';
+    src: url(fonts/Cursed_Timer_ULiL/CursedTimerULiL.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 20px 0;
+}
+
+.scrimba-container {
+    background-color: #1B244A;
+    width: 575px;
+    height: 385px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Cursed Timer ULiL';
+    color: #EEEEEE;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Verdana';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+}
+
+.score {
+    width: 155px;
+    height: 120px;
+    margin-top: 21px;
+    margin-bottom: 26px;
+    background-color: #080001;
+    border-radius: 5px;
+    font-size: 90px;
+    line-height: 127px;
+    color: #F94F6D
+}
+
+.points{
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: transparent;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    color: #9AABD8;
+}
+
+.highlighter {
+    width: 155px;
+    height: 120px;
+    box-shadow: 0 0 5px olivedrab;
+    outline: 2px solid white;
+}
+
+/* Personal container with a an option for basketball or baseball. a toggle for scrimba-container or personal-container. basketball = two total scores, quarter display, timer countdown 12minutes max. Baseball = counter for highschool 1hour 45minutes, score for both teams, the number of inning with an arrow for the top or bottom, ball with three dots, strike with two dots, out with 2 dots. */
+.personal-container {
+    display: none;
+}
