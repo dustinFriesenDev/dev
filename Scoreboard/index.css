@@ -9,11 +9,19 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: 20px 0;
+
+h3 {
+    text-align: center;
+    font-family: 'Verdana';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
 }
 
+
+
 .scrimba-container {
+    position: relative;
     background-color: #1B244A;
     width: 575px;
     height: 385px;
@@ -24,14 +32,18 @@ body{
     font-family: 'Cursed Timer ULiL';
     color: #EEEEEE;
     text-align: center;
+    margin: 30px auto 100px;
 }
 
-h3 {
-    text-align: center;
-    font-family: 'Verdana';
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 36px;
+.sport-type {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.btn-sport-type {
+    border: none;
+    
 }
 
 .score {
@@ -70,7 +82,7 @@ button {
     outline: 2px solid white;
 }
 
-/* Personal container with a an option for basketball or baseball. a toggle for scrimba-container or personal-container. basketball = two total scores, quarter display, timer countdown 12minutes max. Baseball = counter for highschool 1hour 45minutes, score for both teams, the number of inning with an arrow for the top or bottom, ball with three dots, strike with two dots, out with 2 dots. */
+/* Personal container with a an option for basketball or baseball. a toggle for scrimba-container or personal-container. Baseball = counter for highschool 1hour 45minutes, score for both teams, the number of inning with an arrow for the top or bottom, ball with three dots, strike with two dots, out with 2 dots. */
 .personal-container {
     display: none;
 }

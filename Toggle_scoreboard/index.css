@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+@font-face {
+    font-family: 'Cursed Timer ULil';
+    src: url(fonts/Cursed_Timer_ULiL/CursedTimerULiL.woff);
+}
+@font-face {
+    font-family: 'Bad Grunge';
+    src: url(fonts/Bad_Grunge/BAD\ GRUNGE.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Verdana';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+}
+
+.scrimba-container {
+    position: relative;
+    background-color: #1B244A;
+    width: 575px;
+    height: 385px;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Cursed Timer ULiL';
+    color: #EEEEEE;
+    text-align: center;
+    margin: 30px auto 100px;
+}
+
+.reset {
+    width: 50px;
+    border: none;
+    color: #EEEEEE;
+
+}
+
+.reset:hover {
+    cursor: pointer;
+    color: #F94F6D;
+    text-shadow: 0 0 3px black;
+}
+
+.btn-sport-type {
+    width: 175px;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    border: none;
+    padding: 10px; 
+    font-family:  'Special Elite', cursive;   
+    font-size: 12px;
+    color: #EEEEEE
+}
+
+.btn-sport-type:hover {
+    cursor: pointer;
+    color: #9AABD8;
+    text-shadow: 0 0 1px black;
+}
+
+.score {
+    width: 155px;
+    height: 120px;
+    margin-top: 21px;
+    margin-bottom: 26px;
+    background-color: #080001;
+    border-radius: 5px;
+    font-size: 90px;
+    line-height: 127px;
+    color: #F94F6D;
+}
+
+.points{
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: transparent;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    color: #9AABD8;
+}
+
+button:hover {
+    cursor: pointer;
+    border-color: #EEEEEE;
+    color: #EEEEEE;
+}
+
+.highlighter {
+    width: 155px;
+    height: 120px;
+    box-shadow: 0 0 5px olivedrab;
+    outline: 2px solid white;
+}
+
+/* Personal container with a an option for basketball or baseball. a toggle for scrimba-container or personal-container. Baseball = counter for highschool 1hour 45minutes, score for both teams, the number of inning with an arrow for the top or bottom, ball with three dots, strike with two dots, out with 2 dots. */
+.personal-container {
+    position: relative;
+    background-image: url("images/joshua-bartell-6vvIBTvL90A-unsplash.jpg");
+    background-color: #1B244A;
+    width: 735px;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    border: 12px solid rgba(251, 230, 207, 0.7);
+    border-radius: 10px;
+    color: #EEEEEE;
+    text-align: center;
+    margin: 30px auto 100px;
+}
+
+.personal-container  h3 {
+    font-family:  'Special Elite', cursive;
+    font-size: 35px;
+    letter-spacing: 4px;
+    margin-right: 15px;
+    padding-top: 8px;
+}
+
+.base-row-style button {
+    color: #080001;
+}
+
+.base-row-style button:hover {
+    color:#080001;
+}
+
+li {
+    width: 45px;
+    text-align: center;
+    list-style-type: none;
+    font-family:  'Special Elite', cursive;
+    font-size: 30px;
+}
+
+.inning-score, li {
+    padding: 8px 5px 5px;
+    margin: 2px 5px;
+}
+
+.inning-score {
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+}
+
+.inning-score:hover {
+    border-color: #9AABD8;
+}
+
+.inning-number {
+    display: flex;
+    justify-content: end;
+    border-bottom: 8px solid rgba(251, 230, 207, 0.7);
+}
+
+.base-row-style {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px 0;
+    border-top: 8px solid rgba(251, 230, 207, 0.7);
+    border-bottom: 8px solid rgba(251, 230, 207, 0.7);
+}
+
+
+.bso-btn {
+    display: flex;
+    justify-content: space-around;
+    border-top: 8px solid rgba(251, 230, 207, 0.7);
+    
+}
+
+.offense {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+}
+
+.offense-btn {
+    border: none;
+    color: #EEEEEE;
+    font-family:  'Special Elite', cursive;
+    font-size: 20px;
+    margin: auto;
+}
+
+.offense-btn:hover {
+    color: #9AABD8;
+}
+
+.offense-display {
+    width: 45px;
+    height: 35px;
+    background-color: #EEEEEE;
+    margin: auto;
+    padding-top: 8px;
+    border-radius: 10px;
+    color: #080001;
+}
+
+.no-hover:hover {
+    border: none;
+    cursor: initial;
+}
+
