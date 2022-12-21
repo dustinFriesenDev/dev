@@ -21,80 +21,24 @@
         
         <div id="overview" class="overview">
             <h2>Nutrtion List</h2>
-            <form>
-                <div class="table-header">
-                    <div class="col-title col-name col-width">Name</div>
-                    <div class="col-title col-alternate col-width">Alternate Name</div>
-                    <div class="col-title col-category col-width">Category</div>
-                    <div class="col-title col-recommended col-width">Recommended Amount</div>
-                    <div class="col-title col-intake col-width ">Actual Intake</div>
-                    <div class="col-title col-where">Where to Find</div>
-                </div>
-                <div id="nutr1" class="nutrients"><!--1-->
-                    <div class="name col-name col-width"></div>
-                    <div class="alternate col-alternate col-width"></div>
-                    <div class="category col-category col-width"></div>
-                    <div class="recommended col-recommended col-width"></div>
-                    <div for="intake1" class="col-intake col-width"><input type="number" id="intake1" min="0"> mcg</div>
-                    <div class="where col-where">Where to Find</div>
-                </div>
-                <div id="nutr2" class="nutrients"><!--2-->
-                    <div class="name col-name col-width"></div>
-                    <div class="alternate col-alternate col-width"></div>
-                    <div  class="category col-category col-width"></div>
-                    <div class="recommended col-recommended col-width"></div>
-                    <div for="intake2" class="col-intake col-width"><input type="number" id="intake2" min="0"> </div>
-                    <div class="where col-where">Where to Find</div>
-                </div>
-                <div id="nutr3" class="nutrients"><!--3-->
-                    <div class="name col-name col-width"></div>
-                    <div class="alternate col-alternate col-width"></div>
-                    <div  class="category col-category col-width"></div>
-                    <div class="recommended col-recommended col-width"></div>
-                    <div for="intake2" class="col-intake col-width"><input type="number" id="intake3" min="0"> </div>
-                    <div class="where col-where">Where to Find</div>
-                </div>
-                <div id="nutr4" class="nutrients"><!--4-->
-                    <div class="name col-name col-width"></div>
-                    <div class="alternate col-alternate col-width"></div>
-                    <div  class="category col-category col-width"></div>
-                    <div class="recommended col-recommended col-width"></div>
-                    <div for="intake2" class="col-intake col-width"><input type="number" id="intake4" min="0"> </div>
-                    <div class="where col-where">Where to Find</div>
-                </div>
-                <div><!--5--></div>
-                <div><!--6--></div>
-                <div><!--7--></div>
-                <div><!--8--></div>
-                <div><!--9--></div>
-                <div><!--10--></div>
-                <div><!--11--></div>
-                <div><!--12--></div>
-                <div><!--13--></div>
-                <div><!--14--></div>
-                <div><!--15--></div>
-                <div><!--16--></div>
-                <div><!--17--></div>
-                <div><!--18--></div>
-                <div><!--19--></div>
-                <div><!--20--></div>
-                <div><!--21--></div>
-                <div><!--22--></div>
-                <div><!--23--></div>
-                <div><!--24--></div>
-                <div><!--25--></div>
-                <div><!--26--></div>
-                <div><!--27--></div>
-                <div><!--28--></div>
-                <div><!--29--></div>
-                <div><!--30--></div>
-                <div><!--31--></div> 
-            </form>
+            <div class="vitamin"> <!--0-->
+                <div class="row-number col-width"></div>
+                <div class="vit-name col-width"></div>
+                <input type="number" class="consumption col-width" min="0" max="100000">
+                <div class="daily-amount col-width"></div>
+            </div>
+            <div class="vitamin"> <!--1-->
+                <div class="row-number col-width"></div>
+                <div class="vit-name col-width"></div>
+                <input type="number" class="consumption col-width" min="0" max="100000">
+                <div class="daily-amount col-width"></div>
+            </div>
+            
         </div>
     </main>
     <footer> <!-- back to top button -->
 
     </footer>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

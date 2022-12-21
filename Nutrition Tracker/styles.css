@@ -4,48 +4,18 @@
     box-sizing: border-box;
 }
 
-input {
-    width: 50px;
-}
-
-.lacking {
-    display: none;
-}
-
-.table-header, .nutrients {
+body {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
 }
 
-.col-title {
-    font-weight: 700;
+.vitamin {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .col-width {
-    width: 110px;
-}
-
-.col-name {
-    background-color: aqua;
-}
-
-.col-alternate {
-    background-color: darkcyan;
-}
-
-.col-category {
-    background-color: darkkhaki;
-}
-
-.col-recommended {
-    background-color: lightcoral;
-}
-
-.col-intake {
-    background-color: dodgerblue;
-}
-
-.col-where {
-    width: 300px;
-    background-color: crimson;
+    width: 150px;
 }
