@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Nested JavaScript Objects and Arrays.</h2>
+<p class="demo"></p>
+<p class="model"></p>
+<p class="demo"></p>
+<p class="model"></p>
+
+<script>
+const myObj = {
+  cars: [
+    {name:"Ford", models: "Mustang"},
+    {name:"BMW", models: "X5"},
+  ]
+}
+
+var demo = document.querySelectorAll(".demo");
+var model = document.querySelectorAll(".model");
+for (i = 0; i < demo.length; i++){
+    demo[i].innerHTML = myObj.cars[i].name;
+    model[i].innerHTML += myObj.cars[i].models;
+}
+
+
+</script>
+
+</body>
+</html>

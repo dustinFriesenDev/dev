@@ -1,0 +1,11 @@
+// constructors are functional objects. They can have methods, they can add objects to an object 
+// Example: consturctor user can add new users to the user array or database.
+
+function HouseKeeping (yearsOfExperience, name, cleaningRepertoire){
+    this.yearsOfExperience = yearsOfExperience;
+    this.name = name;
+    this.clearningRepertoire = cleaningRepertoire
+    this.cleaning = function(){
+        alert("Cleaning in progress.")
+    }
+}

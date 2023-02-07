@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bevan', cursive;
+    color: #212427;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #212427;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+}
+
+ul {
+    max-width: 500px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+button, .show-more, .popup-menu > div {
+    cursor: pointer;
+}
+
+button {
+    background-color: antiquewhite;
+    font-family: 'Anton', sans-serif;    
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(228, 183, 119, 0.404);
+}
+
+button:active, .show-more:active, .popup-menu > div:active {
+    background-color: rgb(220, 179, 45);
+}
+
+.lacking, .women {
+    display: none;
+}
+
+.updates {
+    text-align: center;
+}
+
+.overview {
+    padding-top: 10px;
+}
+.overview > h2 {
+    max-width: 400px;
+    text-align: left;
+    padding: 0 5px;
+    margin: auto;
+}
+
+.vitamin {
+    font-family: 'Anton', sans-serif;
+    min-width: 150px;
+    max-width: 600px;
+    margin: 4px auto;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    max-width: 450px;
+    background-color: #faebd7;
+    margin: 0 auto 5px;
+    padding: 8px;
+    border-radius: 25px 10px 10px 25px;
+}
+
+.row1 div:nth-of-type(2) {
+    flex-grow: 2;
+}
+
+.row1 > div {
+   padding: 0 5px;
+}
+.row-number {
+    text-align: center;
+    padding-left: 3px;
+}
+
+.vit-name {
+   border-left: 1px solid black;
+   font-size: 1.3rem;
+}
+
+.amount-unit {
+    display: flex;
+}
+
+.amount-unit > div {
+    padding: 0 2px;
+}
+
+.sub-row1 {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border-radius: 5px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0 5px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.show-more {
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 9px;
+}
+
+.row2 {
+    display: none;
+    max-width: 400px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+.row2 > div {
+    padding: 5px;
+}
+
+/* calculator is in the popup menu and I'm hiding it for now until I figure out how to connect calculator display to input value. Also hiding calculort-container until said function can be written */
+.row3 {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: -90px;
+}
+
+.popup-menu {
+    background-color: rgba(0, 0, 0, .75);
+    width: 75px;
+    color:#f7ede0cd;
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.popup-menu > button {
+    text-align: center;
+    width: 65px;
+    padding: 0;
+    margin: 0 3px 1px;
+    border-radius: 5px;
+}
+
+.popup-menu > button:hover, .popup-menu > a:hover {
+    background-color: rgba(228, 183, 119, 0.404);
+    color: white;
+}
+
+/* CALCULATOR */
+.calculator-container {
+    display: block;
+    background-color: blanchedalmond;
+    width: 200px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(60px, auto) repeat(5, 50px);
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .15);
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.calculator-top-row {
+    margin-top: 5px;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px 20px 30px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.border-bottom-left-radius {
+    border-bottom-left-radius: 15px;
+}
+
+.border-bottom-right-radius {
+    border-bottom-right-radius: 15px;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 0.9rem;
+    height: 10px;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 1.2rem;
+    height: 10px;
+    padding: 5px 0 0;
+}
+
+footer {
+    max-width: 700px;
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+footer > div {
+    display: block;
+    margin: 15px auto;
+    padding: 0 15px;
+}
+
+.sticky-close-tabs {
+    display: block;
+    background-color: rgba(0, 0, 0, .75);
+    
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 50px;
+    margin-left: 50%;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+.sticky-close-tabs:hover {
+    background-color: #212427;
+}
+
+.sticky-close-tabs:active {
+    background-color: rgb(33, 36, 39, .5);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 404px) {
+
+
+    .row-number {
+        margin: 0 4px;
+    }
+
+    .vit-name {
+        flex-grow: 2;
+    }
+
+    .amount-unit {
+        margin-right: 40px;
+    }
+
+    .sub-row1{
+        margin-left: 195px;
+    }
+
+}
