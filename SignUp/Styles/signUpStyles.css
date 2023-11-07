@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* Elements, classes, id's affecting the background and file as a whole */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+.background-image img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.body-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#portfolio {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#portfolio:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button, .sign-up, .results {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgba(173, 18, 137, 0.548);
+  border-radius: 18px;
+  box-shadow: 2px 2px 5px 5px rgba(196, 67, 151, 0.151), -2px -2px 5px 5px rgba(206, 87, 18, 0.151);
+}
+
+/* landing page */
+.btn-start {
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.btn-position {
+  position: absolute;
+  left: 71%;
+  bottom: 6%;
+  transform: translateX(-50%);
+}
+
+
+.btn-start:hover, #submit:hover, .return:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn-start:active, #submit:active, .return:active {
+ transform: scale(0.98);
+}
+
+.add-font {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 25px;
+}
+
+/* Form Page */
+.sign-up, .results {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  display: none;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 14px;
+}
+
+h3, #submit, .return, .btn-start, p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+  padding-top: 20px;
+  padding-bottom: 2px;
+}
+
+.sign-up > p {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+label, option {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 8px;
+}
+
+
+#submit, .return {
+  display: block;
+  padding: 5px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.return{
+  margin-top: 30px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+/* Results page */
+
+
+.results-label {
+  font-weight: 700;
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+.results-border {
+  padding-top: 5px;
+  padding-bottom: 7px;
+  margin-bottom: 4px;
+}
+
+
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 450px) {
+  #portfolio {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .sign-up, .results {
+    position: relative;
+    width: 300px;
+    height: 550px;
+    padding: 10px;
+    margin-top: 20px;
+    overflow: initial;
+  }
+  
+  .btn-position {
+    position: absolute;
+    left: 71%;
+    bottom: 5%;
+    transform: translateX(-50%);
+  }
+  }

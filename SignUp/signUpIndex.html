@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="Styles/signUpStyles.css">
+</head>
+<body>
+  <div class="background-image"><img src="images/signUpImages/pexels-pixabay-358312.jpg" alt="picture of boats at a dock and change later.">
+  <div class="body-container">
+    <a href="../index.html" id="portfolio">Back to Portfolio</a>
+    <button class="btn-start" id="btnStart" onclick="signUp()"><span class="add-font">Sign up</span><br> (What are you signing up for again?)</button>
+    <div class="sign-up" id="signUp">
+      <h3>Fill this out to the best of your knowledge. I don't expect much, so no pressure! 😄 </h3>
+  <!-- Name -->
+      <P for="name">Name</P> 
+      <input type="text" id="name" maxlength="40"/>
+  <!-- Contact -->
+      <p class="radioContact">Best way to contact you</p>
+      <input type="radio" id="noInput" name="contact" value="" checked style="display: none";/> 
+      <label><input type="radio" id="scream" name="contact" value="Scream"/> Scream</label>
+      <br> 
+      <label><input type="radio" id="yodel" name="contact" value="Yodel"/> Yodel</label>
+      <br>
+      <label><input type="radio" id="sayName" name="contact" value="Say Your name three times"/> Say Your name three times</label>
+  
+      <!-- Phone Number Choices -->
+      <P for="phone">Phone number</P> 
+      <select id="phone" name="phone">
+        <option value="">Select Your Number</option>
+      </select><br>
+
+  <!-- Animal Fav -->
+      <P for="animal">Favorite Animal</P> 
+      <input  type="text" id="animal" maxlength="40"/>
+  <!-- Birthday Radio -->
+      <p>Birthday</p>
+      <input type="radio" id="noInput1" name="birth" value="" checked style="display: none";/> 
+      <label><input  type="radio" id="past" name="birth" value="Past"/> Past</label>
+      <br>
+      <label><input type="radio" id="present" name="birth" value="Present"/> Present</label>
+      <br>
+      <label><input  type="radio" id="future" name="birth" value="Future"/> Future</label>
+  
+      <!-- Submit button -->
+      <div class="btn-position">
+      <button id="submit" onclick="funForm(); userAnswers();">Submit <span class="strikethrough"> Lies</span> Answers</button>
+      </div>
+    </div>
+    <div class="results" id="results">
+      <h3>Thank you for your input. I will now be super judgey on your answers.</h3>
+
+      <p class="results-label">Name</p> 
+      <p id="resultsName" class="results-border"></p>
+
+      <p class="results-label">Best way to contact you</p> 
+      <p id="resultsContact" class="results-border"></p>
+
+      <p class="results-label" >Phone number</p>
+      <p id="resultsPhone" class="results-border"></p>
+
+      <p class="results-label">Favorite Animal</p>
+      <p id="resultsAnimal" class="results-border"></p>
+
+      <p class="results-label">Birthday</p>
+      <p id="resultsBirth" class="results-border"></p>
+
+      <div class="btn-position">
+      <button class="return" id="return" onclick="backForm()">Change your answers</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="Javascript/signUpScript.js"></script>
+</body>
+</html>
