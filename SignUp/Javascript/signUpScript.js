@@ -173,7 +173,12 @@ function backForm() { //show the form and hide the results.
 readyName();
 function readyName(){
   uName = document.getElementById("name").value;
-  document.getElementById("jokeReady").innerHTML= "Ready " + uName + "?";
+  if(uName == ""){
+    document.getElementById("jokeReady").innerHTML= "Ready?";
+  } else {
+    document.getElementById("jokeReady").innerHTML= "Ready " + uName + "?";
+  }
+  
 }
 
 toJoke(); //first call to ready the buttons so the buttons don't take two clicks.

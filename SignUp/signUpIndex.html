@@ -22,7 +22,6 @@ async function getText(file) {
   </script>
 </head>
 <body>
-  <div class="background-image"><img src="images/signUpImages/pexels-pixabay-358312.jpg" alt="picture of boats at a dock and change later.">
   <div class="body-container">
     <a href="../index.html" id="portfolio">Back to Portfolio</a>
     <button class="btn-start" id="btnStart" onclick="signUp()"><span class="add-font">Sign up</span><br> (What are you signing up for again?)</button>
@@ -91,16 +90,17 @@ async function getText(file) {
     </div>
     <div class="joke-container" id="joke-container">
       <h3>A Joke just for you!</h3>
+      <p class="joke-disclaimer">Jokes provided by <a href="https://github.com/UltiRequiem/joke-api"> UliRequiem</a></p>
       <p class="joke-ready" id="jokeReady"></p>
       <p id="joke" class="joke"></p>
       <p id="punchline" class="punchline"></p>
       <div class="joke-btn-position">
         <button class="return" id="jokeBtn" onclick="jokeToResults()">Back to Results</button>
       </div>
-      <p class="joke-disclaimer">Jokes provided by <a href="https://github.com/UltiRequiem/joke-api"> UliRequiem</a></p>
+      <button onclick="getText('https://joke.deno.dev')" class="btn-position">New Joke</button>
+      
     </div>
     
-  </div>
   </div>
   <script src="Javascript/signUpScript.js"></script>
 </body>

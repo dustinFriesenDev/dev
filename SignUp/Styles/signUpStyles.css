@@ -11,23 +11,16 @@
 
 body {
   position: relative;
-}
-
-.background-image img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
+  background-image: url(../images/signUpImages/resized-pexels-pixabay-358312.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .body-container {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 #portfolio {
@@ -123,10 +116,7 @@ button, .sign-up, .results, .joke-container {
 
 .joke-disclaimer {
   font-size: 0.6rem;
-  position: absolute;
-  bottom: 30px;
-  left: 70%;
-  transform: translateX(-50%);
+  text-align: center;
 }
 
 .joke-ready {
@@ -179,8 +169,6 @@ input[type="text"] {
 }
 
 /* Results page */
-
-
 .results-label {
   font-weight: 700;
   padding-top: 13px;
@@ -202,7 +190,7 @@ input[type="text"] {
     left: 10px;
   }
 
-  .sign-up, .results, .joke {
+  .sign-up, .results, .joke-container {
     position: relative;
     width: 300px;
     height: 550px;
@@ -214,7 +202,14 @@ input[type="text"] {
   .btn-position {
     position: absolute;
     left: 71%;
-    bottom: 5%;
+    bottom: 4%;
+    transform: translateX(-50%);
+  }
+
+  .joke-btn-position {
+    position: absolute;
+    left: 29%;
+    bottom: 4%;
     transform: translateX(-50%);
   }
   }
