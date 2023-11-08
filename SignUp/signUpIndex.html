@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="Styles/signUpStyles.css">
+  <script>
+    getText("https://joke.deno.dev");
+
+async function getText(file) {
+  let myObject = await fetch(file);
+  let myText = await myObject.text();
+  let myJoke = JSON.parse(myText);
+  console.log(myText);
+  console.log(myJoke.setup)
+  document.getElementById("joke").innerHTML = myJoke.setup;
+  document.getElementById("punchline").innerHTML = myJoke.punchline;
+}
+    
+  </script>
 </head>
 <body>
   <div class="background-image"><img src="images/signUpImages/pexels-pixabay-358312.jpg" alt="picture of boats at a dock and change later.">
@@ -20,11 +34,11 @@
   <!-- Contact -->
       <p class="radioContact">Best way to contact you</p>
       <input type="radio" id="noInput" name="contact" value="" checked style="display: none";/> 
-      <label><input type="radio" id="scream" name="contact" value="Scream"/> Scream</label>
+      <label><input type="radio" id="scream" name="contact" value="Scream"/>Scream</label>
       <br> 
-      <label><input type="radio" id="yodel" name="contact" value="Yodel"/> Yodel</label>
+      <label><input type="radio" id="yodel" name="contact" value="Yodel"/>Yodel</label>
       <br>
-      <label><input type="radio" id="sayName" name="contact" value="Say Your name three times"/> Say Your name three times</label>
+      <label><input type="radio" id="sayName" name="contact" value="Say Your name three times"/>Say Your name three times</label>
   
       <!-- Phone Number Choices -->
       <P for="phone">Phone number</P> 
@@ -70,7 +84,22 @@
       <div class="btn-position">
       <button class="return" id="return" onclick="backForm()">Change your answers</button>
       </div>
+      <div class="joke-btn-position">
+        <button class="return" id="jokeBtn" onclick="toJoke(); readyName();">You want to hear a Joke?</button>
+      </div>
+      
     </div>
+    <div class="joke-container" id="joke-container">
+      <h3>A Joke just for you!</h3>
+      <p class="joke-ready" id="jokeReady"></p>
+      <p id="joke" class="joke"></p>
+      <p id="punchline" class="punchline"></p>
+      <div class="joke-btn-position">
+        <button class="return" id="jokeBtn" onclick="jokeToResults()">Back to Results</button>
+      </div>
+      <p class="joke-disclaimer">Jokes provided by <a href="https://github.com/UltiRequiem/joke-api"> UliRequiem</a></p>
+    </div>
+    
   </div>
   </div>
   <script src="Javascript/signUpScript.js"></script>

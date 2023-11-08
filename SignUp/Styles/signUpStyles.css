@@ -44,8 +44,10 @@ body {
   cursor: pointer;
 }
 
-button, .sign-up, .results {
+button, .sign-up, .results, .joke-container {
   background-color: rgb(255, 255, 255);
+  width: 135px;
+  height: 48px;
   border: 3px solid rgba(173, 18, 137, 0.548);
   border-radius: 18px;
   box-shadow: 2px 2px 5px 5px rgba(196, 67, 151, 0.151), -2px -2px 5px 5px rgba(206, 87, 18, 0.151);
@@ -54,19 +56,27 @@ button, .sign-up, .results {
 /* landing page */
 .btn-start {
   width: 200px;
+  height: 89px;
   margin: auto;
-  padding: 10px;
+  padding: 10px 10px 12px;
+
 }
 
 .btn-position {
   position: absolute;
   left: 71%;
-  bottom: 6%;
+  bottom: 4%;
   transform: translateX(-50%);
 }
 
+.joke-btn-position {
+  position: absolute;
+  left: 29%;
+  bottom: 4%;
+  transform: translateX(-50%);
+}
 
-.btn-start:hover, #submit:hover, .return:hover {
+.btn-start:hover, #submit:hover, .return:hover, .joke-btn:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -80,18 +90,57 @@ button, .sign-up, .results {
   font-size: 25px;
 }
 
-/* Form Page */
-.sign-up, .results {
+/* Center Display */
+.sign-up, .results, .joke-container {
   position: relative;
   width: 400px;
   height: 500px;
   padding: 20px;
-  display: none;
+  display: block;
 }
+
+.joke-container h3{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.joke {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.punchline {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.joke-disclaimer {
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: 30px;
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.joke-ready {
+  text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 h3 {
   margin-top: 5px;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
 }
 
 h3, #submit, .return, .btn-start, p {
@@ -125,10 +174,6 @@ input[type="text"] {
   margin-top: 20px;
 }
 
-.return{
-  margin-top: 30px;
-}
-
 .strikethrough {
   text-decoration: line-through;
 }
@@ -138,7 +183,7 @@ input[type="text"] {
 
 .results-label {
   font-weight: 700;
-  padding-top: 15px;
+  padding-top: 13px;
   font-size: 18px;
 }
 
@@ -157,7 +202,7 @@ input[type="text"] {
     left: 10px;
   }
 
-  .sign-up, .results {
+  .sign-up, .results, .joke {
     position: relative;
     width: 300px;
     height: 550px;
