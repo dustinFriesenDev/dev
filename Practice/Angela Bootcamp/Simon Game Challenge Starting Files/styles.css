@@ -3,11 +3,19 @@ body {
   background-color: #011F3F;
 }
 
-#level-title {
+.level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  height: 30%;
+  margin:  50px 5% 40px;
+  color: #FEF2BF;
+}
+
+.white {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
-  color: #FEF2BF;
+  color: green;
 }
 
 .container {

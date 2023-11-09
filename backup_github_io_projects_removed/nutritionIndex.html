@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Bevan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/nutritionStyles.css">
+</head>
+<body>
+    <a href="../index.html" id="portfolio">Back to Portfolio</a>
+    <header> <!-- nav: overview, A little more,   -->
+        <h1 class="logo-title">Nutritional Checker</h1>
+        <ul>
+            <li><button class="nav women">Female</button></li>
+            <li><button class="nav men">Male: Age 19-50</button></li>
+            <li><a href="#lacking" class="nav lacking">Low Values</a></li>  
+        </ul>
+        <div class="updates">Coming soon! The stats for women and more age ranges for each category.</div>
+    </header>
+
+    <main> <!-- list of vitamins and minerals, name, category, recommended amount, actual intake, source of consumption, where to find -->
+        <div id="lacking" class="lacking"><h2>Low Values</h2></div>
+<!-- MAIN CONTENT -->
+        <div id="overview" class="overview">
+            <h2>Nutrtion List</h2>
+            
+            <div class="vitamin"> <!--0-->
+                <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+                
+            </div>
+                <!-- ****WHEN input is click a calculator will popup on the side for desktops and in mobile a dropdown menu will ask if you wan calculaor or more info-->
+                <!-- ****add pop menu to other vitamin divs -->
+            
+            <div class="vitamin"> <!--1-->
+                <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+               <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--2-->
+                <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--3-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--4-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--5-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--6-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--7-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--8-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--9-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--10-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--11-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--12-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--13-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--14-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--15-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--16-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--17-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--18-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--19-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--20-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--21-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--22-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--23-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--24-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--25-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--26-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--27-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin"> <!--28-->
+               <div class="row1">
+                    <div class="row-number"></div>
+                    <div class="vit-name"></div>
+                    <div class="amount-unit">
+                        <div class="daily-amount"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="sub-row1">
+                        <input type="number" class="consumption" min="0" max="100000">   
+                        <div class="show-more">&#xFE19</div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="alt-name"></div>
+                    <div class="sources"></div>
+                    <div class="amount-unit">
+                        <div class="overdose"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="symptoms"></div>
+                </div>
+                <div class="row3">
+                    <div class="popup-menu">
+                        <button class="calculator"><a href="#calculaor-location">Calculator</a></button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>        
+
+        </div>
+    </main>
+    
+    <div id="calculaor-location" class="calculator-container">
+        <div class="calculator-grid">
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            <button data-all-clear class="span-two calculator-top-row">AC</button>
+            <button data-delete class="calculator-top-row">DEL</button>
+            <button data-operation class="calculator-top-row">&divide</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>+</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>-</button>
+            <button data-number class="border-bottom-left-radius">.</button>
+            <button data-number>0</button>
+            <button data-equals class="span-two border-bottom-right-radius">=</button>
+        </div>
+    </div>
+
+    <button class="sticky-close-tabs">Hide ALL info</button>
+    <footer> <!-- back to top button -->
+        <div class="salutation">Thanks for visiting. I hope this has helped you a visualize your daily nutritional intake.</div>
+        <div class="food-disclaimer">
+            Food Disclaimer: Food Sources listed are a few examples and is not intended to be used as a full or extensive list of places you can find these vitamins and minerals.
+        </div>
+        <div class="medical-disclaimer">
+            Medical Disclaimer: This chart and the information in it, is for informational purposes only and should not be used for diagnosis efforts. Speak with your primary medical profession if you have any health concern. 
+        </div>
+        
+    </footer>
+    <script src="./Javascript/nutritionScript.js"></script>
+</body>
+<!-- disclaimer amounts are not provided for women who are pregnant or nursing -->
+<!-- add women amount later with an options for men or women toggle settings. -->
+</html>

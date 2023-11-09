@@ -1,0 +1,7 @@
+.score-row {
+    display: flex;
+}
+
+input{
+    width: 100px;
+}
