@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #2e6cea;
-  min-height: 50px;
+  min-height: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@
 }
 
 .question {
-  margin: 30px;
+  margin: 20px;
   font-size: 2rem;
 
 }
@@ -42,7 +42,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .option{
@@ -70,3 +69,8 @@ img {
   width: auto;
   border-radius: 35px;
 }
+
+.btn-next {
+  background-color: dodgerblue;
+  color: white;
+} 

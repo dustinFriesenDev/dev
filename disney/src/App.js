@@ -14,6 +14,8 @@ function App() {
 
   //TODO: map Json to display the question, options, and answer in the correct order.
   // TODO: display one object at a time and when the button next is clicked, add one to the counter and display corresponding object.
+  //TODO: if wrong answer selected box shakes, disables, and fades
+  //TODO: when correct answer is selected "option" div disappeares and "answer" div appears. 
 
   return (
     <div className="App">
@@ -33,7 +35,7 @@ function App() {
           {/* Working on creating a border layer to make the image an oval without having to alter the image. */}
           {/* <div className='border'></div> */}
           <img src={placeholder} alt="princess"/>
-          <button type="button">Next</button>
+          <p className='option btn-next' id="btnNext">Next</p>
         </div>  
       </div>
       
