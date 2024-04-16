@@ -18,17 +18,33 @@ function App() {
   //TODO: when correct answer is selected "option" div disappeares and "answer" div appears. 
 
   const princessList = princesses.map((e) => {
-    return (
-      <>
-      <div className="question" id="question">{e.id}. {e.question}</div>
-      <div className='option-container' id="option-container">
-        <p className='option o1' id="o1">{e.o1}</p>
-        <p className='option o2' id="o2">{e.o2}</p>
-        <p className='option o3' id="o3">{e.o3}</p>
-        <p className='option o4' id="o4">{e.o4}</p>
-      </div>
-      </> 
-    );
+    const counter = 5;
+    if(counter === e.id){
+      return (<div key={e.id}>
+        <div className="question" id="question">{e.id}. {e.question}</div>
+        <div className='option-container' id="option-container">
+          <p className='option o1' id="o1">{e.o1}</p>
+          <p className='option o2' id="o2">{e.o2}</p>
+          <p className='option o3' id="o3">{e.o3}</p>
+          <p className='option o4' id="o4">{e.o4}</p>
+        </div>
+        </div>
+        )
+    }
+    // return (
+    //   <>
+    //   <div key={e.id}>
+    //   <div className="question" id="question">{e.id}. {e.question}</div>
+    //   <div className='option-container' id="option-container">
+    //     <p className='option o1' id="o1">{e.o1}</p>
+    //     <p className='option o2' id="o2">{e.o2}</p>
+    //     <p className='option o3' id="o3">{e.o3}</p>
+    //     <p className='option o4' id="o4">{e.o4}</p>
+    //   </div>
+    //   </div>
+    //   {console.log({trial})}
+    //   </> 
+    // );
   });
 
 
