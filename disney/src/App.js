@@ -1,8 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import placeholder from './components/placeholder.jpg';
+import princesses from './princessQuestions.json';
 
 function App() {
+
+  const princessList = princesses.map((e) => {
+    return (
+     <p>{e.name}</p> 
+    );
+  });
 
   const correctAnswer = () => {
     const oc = document.getElementById("option-container");
@@ -29,6 +36,7 @@ function App() {
           <p className='option o2' id="o2">something2</p>
           <p className='option o3' id="o3">somthing3</p>
           <p className='option o4' id="o4">something4</p>
+          {princessList}
         </div>
         <div className='answer' id="answer">
           <h3>Disney Princess Name</h3>
