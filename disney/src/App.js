@@ -4,26 +4,32 @@ import princesses from './princessQuestions.json';
 import React, { useState } from 'react';
 
 function App() {
-  const [counter, setCounter] = useState(16);
+  const [counter, setCounter] = useState(1);
+  const [answ, setAnsw] = useState("");
 
-  const correctAnswer = () => {
+  const correctAnswer = (e) => {
     const oc = document.getElementById("option-container");
     const answer = document.getElementById("answer");
-
-    oc.style.display = "none";
-    answer.style.display = "block";
+    const option = e.target;
+    const correct = document.getElementById("correct");
+    if(option.innerText === correct.innerText){
+      oc.style.display = "none";
+      answer.style.display = "block";
+    } else {
+      if(option.id !== "option-container"){
+        option.style.backgroundColor = "#BFF5FD";
+        option.style.opacity = "0.5";
+        option.classList.add("add-shake");
+      }
+    }
   }
 
   const nextQuestion = () => {
     setCounter(counter + 1); 
   }
 
-  // TODO: display one object at a time and when the button next is clicked, add one to the counter and display corresponding object.
-  //TODO: if wrong answer selected box shakes, disables, and fades
-  //TODO: when correct answer is selected "option" div disappeares and "answer" div appears. 
-
   const princessList = princesses.map((e) => {
-    
+
     if(counter === e.id){
       return (
         <div key={e.id}>
@@ -34,14 +40,15 @@ function App() {
             <p className='option o3' id="o3">{e.o3}</p>
             <p className='option o4' id="o4">{e.o4}</p>
           </div>
+          {/* Answer */}
           <div className='answer' id="answer">
-          <h3>Disney Princess Name</h3>
+          <h3>{e.name}</h3>
+          <p style={{display: "none"}} id="correct">{e.answer}</p>
           {/* Working on creating a border layer to make the image an oval without having to alter the image. */}
           {/* <div className='border'></div> */}
           <img src={placeholder} alt="princess"/>
           <p className='option btn-next' id="btnNext" onClick={nextQuestion}>Next</p>
-        </div> 
-
+        </div>
         </div>
       )
     } 
