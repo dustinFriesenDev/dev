@@ -1,15 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import placeholder from './components/placeholder.jpg';
 import princesses from './princessQuestions.json';
 
 function App() {
-
-  const princessList = princesses.map((e) => {
-    return (
-     <p>{e.name}</p> 
-    );
-  });
 
   const correctAnswer = () => {
     const oc = document.getElementById("option-container");
@@ -24,20 +17,36 @@ function App() {
   //TODO: if wrong answer selected box shakes, disables, and fades
   //TODO: when correct answer is selected "option" div disappeares and "answer" div appears. 
 
+  const princessList = princesses.map((e) => {
+    return (
+      <>
+      <div className="question" id="question">{e.id}. {e.question}</div>
+      <div className='option-container' id="option-container">
+        <p className='option o1' id="o1">{e.o1}</p>
+        <p className='option o2' id="o2">{e.o2}</p>
+        <p className='option o3' id="o3">{e.o3}</p>
+        <p className='option o4' id="o4">{e.o4}</p>
+      </div>
+      </> 
+    );
+  });
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Disney Princess Quiz</h1>
+        <div>Disney Princess Quiz</div>
       </header>
       <div className='main-container'>
-        <div className="question" id="question">This is the question. this is a questionsupering a s</div>
+      {princessList}
+        {/* <div className="question" id="question">This is the question. this is a questionsupering a s</div>
         <div className='option-container' id="option-container" onClick={correctAnswer}>
           <p className='option o1' id="o1">something1</p>
           <p className='option o2' id="o2">something2</p>
           <p className='option o3' id="o3">somthing3</p>
           <p className='option o4' id="o4">something4</p>
           {princessList}
-        </div>
+        </div> */}
         <div className='answer' id="answer">
           <h3>Disney Princess Name</h3>
           {/* Working on creating a border layer to make the image an oval without having to alter the image. */}
