@@ -8,8 +8,8 @@
         "o3":"Ariel",
         "o4":"Raya",
         "answer":"Belle",
-        "img":"",
-        "alt-text":"Princess Belle in a yellow dress."
+        "img":"https://live.staticflickr.com/65535/53659027405_f1f95529c2_o.jpg",
+        "altText":"Princess Belle in a yellow dress holding a rose."
     },
     {
         "id":2,
@@ -20,8 +20,8 @@
         "o3":"Aurora",
         "o4":"Elsa",
         "answer":"Cinderella",
-        "img":"",
-        "alt-text":"Princess Cinderella in a blue gown."
+        "img":"https://live.staticflickr.com/65535/53658723181_ed658e4419_o.jpg",
+        "altText":"Princess Cinderella in a blue gown."
     },{
         "id":3,
         "name":"Princess Aurora",
@@ -31,8 +31,8 @@
         "o3":"Aurora",
         "o4":"Cinderella",
         "answer":"Aurora",
-        "img":"",
-        "alt-text":"Princess Aurora in a pink dress."
+        "img":"https://live.staticflickr.com/65535/53659081684_933eb335e8_o.jpg",
+        "altText":"Princess Aurora in a pink dress."
     },{
         "id":4,
         "name":"Princess Snow White",
@@ -42,8 +42,8 @@
         "o3":"Tian",
         "o4":"Snow White",
         "answer":"Snow White",
-        "img":"",
-        "alt-text":"Snow White in a blue and yellow dress."
+        "img":"https://live.staticflickr.com/65535/53659194365_3dac0a6e8c_o.jpg",
+        "altText":"Snow White in a blue and yellow dress."
     },{
         "id":5,
         "name":"Princess Tiana",
@@ -53,8 +53,8 @@
         "o3":"Mulan",
         "o4":"Anna",
         "answer":"Tiana",
-        "img":"",
-        "alt-text":"Princess Tiana in a yellow dress."
+        "img":"https://live.staticflickr.com/65535/53658723191_b07fe990f3_o.jpg",
+        "altText":"Princess Tiana in a yellow dress."
     },{
         "id":6,
         "name":"Princess Merida",
@@ -64,8 +64,8 @@
         "o3":"Rapunzel",
         "o4":"Moana",
         "answer":"Merida",
-        "img":"",
-        "alt-text":"Princess Merida in a green dress with curly red hair."
+        "img":"https://live.staticflickr.com/65535/53657861552_6c18d1f01f_o.jpg",
+        "altText":"Princess Merida in a green dress with curly red hair."
     },{
         "id":7,
         "name":"Princess Mulan",
@@ -75,8 +75,8 @@
         "o3":"Mulan",
         "o4":"Elsa",
         "answer":"Mulan",
-        "img":"",
-        "alt-text":"Princess Mulan in a green and blue Hanfu."
+        "img":"https://live.staticflickr.com/65535/53658953023_e5027d5419_o.jpg",
+        "altText":"Princess Mulan in a green and blue Hanfu."
     },{
         "id":8,
         "name":"Princess Elsa",
@@ -86,8 +86,8 @@
         "o3":"Pocahontas",
         "o4":"Elsa",
         "answer":"Elsa",
-        "img":"",
-        "alt-text":"Princess Elsa wearing a light blue dress made of snow and ice."
+        "img":"https://live.staticflickr.com/65535/53657861587_b210d7383a_o.jpg",
+        "altText":"Princess Elsa wearing a light blue dress made of snow and ice."
     },
     {
         "id":9,
@@ -98,8 +98,8 @@
         "o3":"Ariel",
         "o4":"Tiana",
         "answer":"Anna",
-        "img":"",
-        "alt-text":"Princess Anna wearing a dress with a black top and green skirt."
+        "img":"https://live.staticflickr.com/65535/53659081674_e9d870c119_o.jpg",
+        "altText":"Princess Anna wearing a dress with a black top and green skirt."
     },{
         "id":10,
         "name":"Princess Rapunzel",
@@ -109,8 +109,8 @@
         "o3":"Aurora",
         "o4":"Elsa",
         "answer":"Rapunzel",
-        "img":"",
-        "alt-text":"Princess Rapunzel wearing a purple dress."
+        "img":"https://live.staticflickr.com/65535/53657861537_fef6cf3685_o.jpg",
+        "altText":"Princess Rapunzel wearing a purple dress."
     },
     {
         "id":11,
@@ -121,8 +121,8 @@
         "o3":"Jasmine",
         "o4":"Pocahontas",
         "answer":"Jasmine",
-        "img":"",
-        "alt-text":"Princess Jasmine wearing a blue two piece gown."
+        "img":"https://live.staticflickr.com/65535/53658723231_2966704e7b_o.jpg",
+        "altText":"Princess Jasmine wearing a blue two piece gown."
     },
     {
         "id":12,
@@ -133,8 +133,8 @@
         "o3":"Ariel",
         "o4":"Pocahontas",
         "answer":"Pocahontas",
-        "img":"",
-        "alt-text":"Princess Pocahontas wearing a tan gown decorated with feather and beads."
+        "img":"https://live.staticflickr.com/65535/53658953013_7ef8b3c5ed_o.jpg",
+        "altText":"Princess Pocahontas wearing a tan gown decorated with feather and beads."
     },
     {
         "id":13,
@@ -145,8 +145,8 @@
         "o3":"Rapunzel",
         "o4":"Anna",
         "answer":"Moana",
-        "img":"",
-        "alt-text":"Princess Moana wearing a orange tapa top and tan pandanus skirt."
+        "img":"https://live.staticflickr.com/65535/53659194420_501af9a35d_o.jpg",
+        "altText":"Princess Moana wearing a orange tapa top and tan pandanus skirt."
     },
     {
         "id":14,
@@ -157,8 +157,8 @@
         "o3":"Jasmine",
         "o4":"Tiana",
         "answer":"Raya",
-        "img":"",
-        "alt-text":"Princess Raya wearing a sampot dress, a traditional cambodian dance outfit."
+        "img":"https://live.staticflickr.com/65535/53657861532_9c7da68a73_o.jpg",
+        "altText":"Princess Raya wearing a sampot dress, a traditional cambodian dance outfit."
     },
     {
         "id":15,
@@ -169,7 +169,7 @@
         "o3":"Elsa",
         "o4":"Rapunzel",
         "answer":"Ariel",
-        "img":"",
-        "alt-text":"Princess Ariel as a mermaid and pink seashell top."
+        "img":"https://live.staticflickr.com/65535/53659194360_87fcf0163b_o.jpg",
+        "altText":"Princess Ariel as a mermaid and pink seashell top."
     }
 ]

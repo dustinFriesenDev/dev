@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 
 function App() {
   const [counter, setCounter] = useState(1);
-  const [answ, setAnsw] = useState("");
 
   const correctAnswer = (e) => {
     const oc = document.getElementById("option-container");
@@ -40,15 +39,16 @@ function App() {
             <p className='option o3' id="o3">{e.o3}</p>
             <p className='option o4' id="o4">{e.o4}</p>
           </div>
-          {/* Answer */}
+
+        {/* Answer */}
           <div className='answer' id="answer">
-          <h3>{e.name}</h3>
-          <p style={{display: "none"}} id="correct">{e.answer}</p>
-          {/* Working on creating a border layer to make the image an oval without having to alter the image. */}
-          {/* <div className='border'></div> */}
-          <img src={placeholder} alt="princess"/>
-          <p className='option btn-next' id="btnNext" onClick={nextQuestion}>Next</p>
-        </div>
+            <h3>{e.name}</h3>
+            <p style={{display: "none"}} id="correct">{e.answer}</p>
+            {/* Working on creating a border layer to make the image an oval without having to alter the image. */}
+            {/* <div className='border'></div> */}
+            <img src={e.img} alt={e.altText} />
+            <p className='option btn-next' id="btnNext" onClick={nextQuestion}>Next</p>
+          </div>
         </div>
       )
     } 
