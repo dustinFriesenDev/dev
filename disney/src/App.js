@@ -4,7 +4,7 @@ import princesses from './princessQuestions.json';
 import React, { useState } from 'react';
 
 function App() {
-  const [counter, setCounter] = useState(1);
+  const [counter, setCounter] = useState(16);
 
   const correctAnswer = () => {
     const oc = document.getElementById("option-container");
@@ -44,10 +44,26 @@ function App() {
 
         </div>
       )
-    }
+    } 
   });
 
+  function endPage() {
+    if (counter > princesses.length){
+      return (
+        <div>
+          <h3>Congratulations!! You finished the quiz.</h3>
+          <p>Click the button below to start again.</p>
+          <p className='option btn-next' id="btnAgain" onClick={startOver}>Start Over</p>
+        </div>
+      )
+    }
+  }
 
+  const startOver = () => {
+    setCounter(1);
+  }
+
+//HTML Return Statement
   return (
     <div className="App">
       <header className="App-header">
@@ -55,13 +71,14 @@ function App() {
       </header>
       <div className='main-container'>
         {princessList}
-        <div className='answer' id="answer">
-          <h3>Disney Princess Name</h3>
+        {endPage()}
+        {/* <div className='answer' id="answer">
+          <h3>Disney Princess Name</h3> */}
           {/* Working on creating a border layer to make the image an oval without having to alter the image. */}
           {/* <div className='border'></div> */}
-          <img src={placeholder} alt="princess"/>
+          {/* <img src={placeholder} alt="princess"/>
           <p className='option btn-next' id="btnNext">Next</p>
-        </div>  
+        </div>   */}
       </div>
       
 
