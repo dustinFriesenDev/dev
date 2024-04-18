@@ -1,10 +1,11 @@
 import './App.css';
-import placeholder from './components/placeholder.jpg';
-import princesses from './princessQuestions.json';
 import React, { useState } from 'react';
+import princesses from './princessQuestions.json';
 
 function App() {
   const [counter, setCounter] = useState(1);
+  const [addPoint, setAddPoint] = useState(0);
+  const [score, setScore] = useState(0);
 
   const correctAnswer = (e) => {
     const oc = document.getElementById("option-container");
@@ -14,21 +15,30 @@ function App() {
     if(option.innerText === correct.innerText){
       oc.style.display = "none";
       answer.style.display = "block";
+      setAddPoint(addPoint + 1);
     } else {
       if(option.id !== "option-container"){
-        option.style.backgroundColor = "#BFF5FD";
-        option.style.opacity = "0.5";
+        option.style.backgroundColor = "#054553";
+        option.style.color = "white";
+        option.style.opacity = "0.7";
         option.classList.add("add-shake");
+        setAddPoint(addPoint - 1);
       }
     }
+    console.log(addPoint);
   }
 
   const nextQuestion = () => {
-    setCounter(counter + 1); 
+    setCounter(counter + 1);
+    if(addPoint > 0){
+      setScore(score + 1);
+    }
+    setAddPoint(0);
+    console.log(addPoint);
+    console.log(score);
   }
 
   const princessList = princesses.map((e) => {
-
     if(counter === e.id){
       return (
         <div key={e.id}>
@@ -59,8 +69,9 @@ function App() {
       return (
         <div>
           <h3>Congratulations!! You finished the quiz.</h3>
+          <p>You got {score} out of {princesses.length} answers correct on the first try.</p>
           <p>Click the button below to start again.</p>
-          <p className='option btn-next' id="btnAgain" onClick={startOver}>Start Over</p>
+          <p className='option btn-next btn-again' id="btnAgain" onClick={startOver}>Start Over</p>
         </div>
       )
     }
@@ -68,27 +79,23 @@ function App() {
 
   const startOver = () => {
     setCounter(1);
+    setAddPoint(0);
+    setScore(0);
   }
 
 //HTML Return Statement
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header">      
         <div>Disney Princess Quiz</div>
       </header>
-      <div className='main-container'>
-        {princessList}
-        {endPage()}
-        {/* <div className='answer' id="answer">
-          <h3>Disney Princess Name</h3> */}
-          {/* Working on creating a border layer to make the image an oval without having to alter the image. */}
-          {/* <div className='border'></div> */}
-          {/* <img src={placeholder} alt="princess"/>
-          <p className='option btn-next' id="btnNext">Next</p>
-        </div>   */}
-      </div>
-      
-
+        <div className='main-container'>
+          {princessList}
+          {endPage()}
+        </div>
+      <footer>
+        <small>Quiz created by Dustin Friesen. All images and characters are owned by Disney. This quiz is for demonstration.</small>
+      </footer>
     </div>
   );
 }

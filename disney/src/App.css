@@ -1,43 +1,44 @@
+body {
+  background-color: #fff0f2;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #113CCF;
+  background-color: #ffc5e0;
   font-family: "Tangerine", cursive;
   font-weight: 700;
   font-size: 80px;
-  min-height: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  color: rgb(243, 241, 241);
+  color: rgb(255, 255, 255);
+  text-shadow: -1px 1px black;
   padding: 15px;
 }
+
+
 
 .main-container {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  flex: 1;
+  /* margin: auto; */
   min-width: 300px;
-
+  height: 490px;
 }
 
 .question {
   margin: 20px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -52,13 +53,13 @@
   padding: 10px;
   border-radius: 17px;
   border: 1px solid black;
-  
   font-weight: 600;
 }
 
 .option:hover {
-  background-color: #BFF5FD;
+  background-color: #f5dea4;
   transition: 0.5s;
+  color: rgb(0, 0, 0);
 }
 
 .answer{
@@ -70,7 +71,7 @@
 } */
 
 img {
-  height: 300px;
+  height: 275px;
   width: auto;
   border-radius: 35px;
 }
@@ -94,7 +95,26 @@ img {
 }
 
 .btn-next {
-  background-color: dodgerblue;
-  color: white;
+  width: 70px;
+  padding: 10px 12px;
+  background-color: #ffe7ac;
+  color: rgb(0, 0, 0);
   margin: 10px auto;
 } 
+
+.btn-again {
+  width: 100px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  background-color: #FFC5E0;
+}
+
+footer > small {
+  padding: 5px;
+}
