@@ -94,7 +94,7 @@ function App() {
           {endPage()}
         </div>
       <footer>
-        <small>Quiz created by Dustin Friesen. All images and characters are owned by Disney. This quiz is for demonstration.</small>
+        <small>Quiz created by Dustin Friesen. All images and characters are owned by Disney. This quiz is for demonstration purposes only.</small>
       </footer>
     </div>
   );

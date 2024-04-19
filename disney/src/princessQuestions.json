@@ -14,7 +14,7 @@
     {
         "id":2,
         "name":"Princess Cinderella",
-        "question":"Which princess has two mice named Jac and Gus-Gus for best friends?",
+        "question":"Which princess has two mice friends named Jaq and Gus-Gus?",
         "o1":"Moana",
         "o2":"Cinderella",
         "o3":"Aurora",
@@ -36,7 +36,7 @@
     },{
         "id":4,
         "name":"Princess Snow White",
-        "question":"This princess's seven dwarf friends help her cheer up when she is feeling sad.",
+        "question":"This princess has seven dwarf friends that help cheer her up when she is feeling sad. Who is she?",
         "o1":"Pocahontas",
         "o2":"Ariel",
         "o3":"Tiana",
@@ -47,7 +47,7 @@
     },{
         "id":5,
         "name":"Princess Tiana",
-        "question":"This princess runs her own restraunt and has a trumpet playing alligator friend.",
+        "question":"Which princess runs her own restraunt and has a trumpet playing alligator friend?",
         "o1":"Tiana",
         "o2":"Snow White",
         "o3":"Mulan",
@@ -58,7 +58,7 @@
     },{
         "id":6,
         "name":"Princess Merida",
-        "question":"She has big red curly hair and protects her family with a bow and arrow.",
+        "question":"Which princess has big red curly hair and protects her family with a bow and arrow?",
         "o1":"Belle",
         "o2":"Merida",
         "o3":"Rapunzel",
@@ -69,7 +69,7 @@
     },{
         "id":7,
         "name":"Princess Mulan",
-        "question":"Mushu is always getting her into trouble, but she figures out a solution.",
+        "question":"Mushu is always getting her into trouble, but she figures out a solution. Who is she?",
         "o1":"Cinderella",
         "o2":"Jasmine",
         "o3":"Mulan",
@@ -80,7 +80,7 @@
     },{
         "id":8,
         "name":"Princess Elsa",
-        "question":"She uses her magic to make snowy fun.",
+        "question":"Which princess uses her magic to make snowy fun?",
         "o1":"Belle",
         "o2":"Snow White",
         "o3":"Pocahontas",
@@ -92,7 +92,7 @@
     {
         "id":9,
         "name":"Princess Anna",
-        "question":"Her good spirit and friends Olaf and Sven get her through any adventure.",
+        "question":"Her good spirit and her friends, Olaf and Sven, get her through any adventure. Which princess is it?",
         "o1":"Anna",
         "o2":"Raya",
         "o3":"Ariel",
@@ -103,7 +103,7 @@
     },{
         "id":10,
         "name":"Princess Rapunzel",
-        "question":"All she wants is to see the floating lights for her birthday with her chameleon friend Pascal.",
+        "question":"All she wants is to see the floating lights for her birthday with her chameleon friend Pascal. Who is she?",
         "o1":"Mulan",
         "o2":"Rapunzel",
         "o3":"Aurora",
@@ -115,7 +115,7 @@
     {
         "id":11,
         "name":"Princess Jasmine",
-        "question":"She lives in a desert but is ready for a whole new world.",
+        "question":"Which princess lives in a desert but is ready for a whole new world?",
         "o1":"Merida",
         "o2":"Ariel",
         "o3":"Jasmine",
@@ -127,7 +127,7 @@
     {
         "id":12,
         "name":"Princess Pocahontas",
-        "question":"This princess shows her new friend John Smith to paint with all the colors of the wind.",
+        "question":"This princess shows her new friend John Smith to paint with all the colors of the wind. Which princess is it?",
         "o1":"Belle",
         "o2":"Mulan",
         "o3":"Ariel",
@@ -151,7 +151,7 @@
     {
         "id":14,
         "name":"Princess Raya",
-        "question":"She has to save the last dragon.",
+        "question":"Who has to save the last dragon?",
         "o1":"Moana",
         "o2":"Raya",
         "o3":"Jasmine",
@@ -163,7 +163,7 @@
     {
         "id":15,
         "name":"Princess Ariel",
-        "question":"She had fins but now she has feet. She is a princess of two worlds.",
+        "question":"She had fins but now she has feet. She is a princess of two worlds. Who is she?",
         "o1":"Ariel",
         "o2":"Cinderella",
         "o3":"Elsa",
